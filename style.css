@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: #f9f5f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator {
+  background-color: #40596b;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.2),
+    5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.row button {
+  border: 0;
+  outline: 0;
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  font-size: 17px;
+  color: #ffffff;
+  margin: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.row .operator {
+  color: #ffe4c4;
+  font-weight: 600;
+}
+.row .equal {
+  background-color: #ffe4c4;
+  color: #40596b;
+  font-weight: 600;
+}
+.display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px 0;
+}
+.display #inputBox {
+  text-align: right;
+  flex: 1;
+  font-size: 22px;
+  box-shadow: none;
+  border: 0;
+  outline: 0;
+  color: #ffffff;
+  margin: 10px;
+  cursor: pointer;
+  transition: 1s;
+  background: transparent;
+}
+@media screen and (min-width: 300px) and (max-width: 368px) {
+  html {
+    width: 123%;
+    display: grid;
+  }
+}
